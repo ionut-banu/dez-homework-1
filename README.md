@@ -2,6 +2,23 @@
 Homework 1: Docker, SQL and Terraform for Data Engineering Zoomcamp 2026
 
 
+## Question 1. Understanding Docker images
+
+```bash
+pip install uv
+
+uv --version
+
+uv init pipeline --python 3.13
+
+cd pipeline
+
+uv run python -V 
+
+uv run pip -V #25.3
+```
+
+
 ## Question 3. Counting short trips
 
 ```sql
@@ -52,4 +69,18 @@ group by doz."Zone"
 order by max(t.tip_amount) desc;
 -- Yorkville West - 81.89
 ```
+
+
+## Question 7. Terraform Workflow
+
+```bash
+terraform init
+
+terraform plan
+
+terraform apply
+
+terraform destroy
+```
+
 

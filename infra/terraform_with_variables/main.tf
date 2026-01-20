@@ -19,6 +19,9 @@ resource "google_storage_bucket" "demo-bucket" {
   location      = var.location
   force_destroy = true
 
+  storage_class               = var.gcs_storage_class
+  uniform_bucket_level_access = var.gcs_uniform_level_access
+
 
   lifecycle_rule {
     condition {
