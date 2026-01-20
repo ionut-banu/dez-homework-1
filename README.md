@@ -5,17 +5,11 @@ Homework 1: Docker, SQL and Terraform for Data Engineering Zoomcamp 2026
 ## Question 1. Understanding Docker images
 
 ```bash
-pip install uv
+docker pull python:3.13
 
-uv --version
+docker run -it --rm python:3.13 bash
 
-uv init pipeline --python 3.13
-
-cd pipeline
-
-uv run python -V 
-
-uv run pip -V #25.3
+python -m pip -V # 25.3
 ```
 
 
