@@ -38,7 +38,7 @@ order by sum(t.total_amount) desc;
 ```
 
 
-## 
+## Question 6. Largest tip
 
 ```sql
 select doz."Zone", max(t.tip_amount)
@@ -50,5 +50,6 @@ where puz."Zone" = 'East Harlem North'
 	and EXTRACT(MONTH FROM t.lpep_pickup_datetime) = 11
 group by doz."Zone"
 order by max(t.tip_amount) desc;
+-- Yorkville West - 81.89
 ```
 
